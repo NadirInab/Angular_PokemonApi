@@ -106,6 +106,7 @@ Angular CLI provides many commands for various tasks, such as generating service
 <ul>
   <li *ngFor="let item of items">{{ item }}</li>
 </ul>
+```
 
 - ngSwitch : Switching between multiple cases based on a condition.
 
