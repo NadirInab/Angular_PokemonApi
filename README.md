@@ -1,27 +1,100 @@
-# Pokeapi
+<div align="center">
+     <img src="https://miro.medium.com/v2/resize:fit:640/format:webp/1*bMgQ8MhbnQexpqHgIgBJPA.png" alt="Image Alt Text">
+  
+</div>
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.1.
+![Javascript](https://img.shields.io/badge/Angular-red.svg)
+![Javascript](https://img.shields.io/badge/JavaScript-gold.svg)
+![Javascript](https://img.shields.io/badge/component-bleusvg)
+![Javascript](https://img.shields.io/badge/SPA-red.svg)
+![Javascript](https://img.shields.io/badge/dataBinding-white.svg)
+![Javascript](https://img.shields.io/badge/services-yellow.svg)
+![Javascript](https://img.shields.io/badge/typescript-bley.svg)
 
-## Development server
+## Angular : 
+- Angular is a platform for building web applications using TypeScript, HTML, and CSS. 
+- It provides tools and structures to create interactive, dynamic, and single-page applications. Angular simplifies development by offering a framework that organizes code, manages data, handles user interactions, and helps create a seamless user experience on the web.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+### Few notions : 
 
-## Code scaffolding
+## Components:
+-  Components are the individual parts of an Angular application that encapsulate specific features or sections.
+-  They consist of : TypeScript code, HTML templates, and styles.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# Modules
+- Modules are containers that group related components, directives, pipes, and services in an Angular application. They help organize and manage the overall structure of the app.
+  
+# Services:
+- Services are reusable pieces of code that perform specific tasks or provide shared data and functionality across components. 
+- They promote code reuse and maintain a separation of concerns.
 
-## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# Angular CLI :
+Angular CLI provides many commands for various tasks, such as generating services, pipes, modules, and more. Here some the most common used ones : 
 
-## Running unit tests
+- Create a new Angular application :
+  
+```md
+  ng new my-app
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+```
 
-## Running end-to-end tests
+- Generate a new component::
+  
+```md
+  ng generate component my-component
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
-## Further help
+```
+- Serve the application locally: :
+  
+```md
+  ng serve
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```
+
+- Run unit tests: :
+  
+```md
+ ng test
+
+
+```
+
+# Angular templates : 
+ Angular templates involves data binding and interpolation.
+
+ ## interpolation {{ expression }} 
+ - Interpolation is a way to output the result of an expression in the HTML template. 
+
+```md
+<p>Welcome, {{ username }}!</p>
+
+```
+
+ ## Property Binding [property]="expression" 
+ - Property binding allows you to set the value of an HTML element's property to the result of an expression.
+  
+
+```md
+<img [src]="imageUrl" alt="Image">
+
+```
+
+ ## Event Binding (event)="expression"
+ - Event binding allows you to respond to user events (e.g., clicks, mouseovers).
+  
+
+```md
+<button (click)="onButtonClick()">Click me</button>
+
+
+```
+
+## OnInit :
+- The OnInit interface in Angular is used to define a lifecycle hook for a component. 
+- Specifically, the OnInit interface has a single method called ngOnInit(), which is a lifecycle hook that is called after the component has been initialized.
+- this hook to perform any initialization logic needed for the component, such as fetching data, setting up subscriptions.
+  
+- The Component decorator is used to define the metadata for the component, including the selector, template, and style URLs.
+
