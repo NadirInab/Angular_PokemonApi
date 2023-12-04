@@ -91,6 +91,43 @@ Angular CLI provides many commands for various tasks, such as generating service
 
 ```
 
+# Directives : 
+- Directives play a crucial role in enhancing the declarative nature of Angular templates and making it easier to build dynamic and interactive web applications,  Angular has several built-in directives : 
+- ngIf: Conditionally rendering elements.
+
+```md
+<div *ngIf="isLoggedIn">Welcome, {{ username }}!</div>
+
+```
+
+- ngFor: Iterating over a collection to generate a list of elements.
+
+```md
+<ul>
+  <li *ngFor="let item of items">{{ item }}</li>
+</ul>
+
+- ngSwitch : Switching between multiple cases based on a condition.
+
+```md
+<div [ngSwitch]="color">
+  <div *ngSwitchCase="'red'">Red</div>
+  <div *ngSwitchCase="'blue'">Blue</div>
+  <div *ngSwitchDefault>Other</div>
+</div>
+
+
+```
+- ngStyle : Dynamically applying styles to an element.
+
+```md
+<div [ngStyle]="{ 'color': textColor, 'font-size': fontSize + 'px' }">Styled Text</div>
+
+
+
+```
+
+
 ## OnInit :
 - The OnInit interface in Angular is used to define a lifecycle hook for a component. 
 - Specifically, the OnInit interface has a single method called ngOnInit(), which is a lifecycle hook that is called after the component has been initialized.
